@@ -8,7 +8,7 @@ import history from './services/history';
 
 import GlobalStyle from './styles/global';
 
-function App() {
+export default function App() {
   return (
     <>
       <GlobalStyle />
@@ -18,5 +18,3 @@ function App() {
     </>
   );
 }
-
-export default App;
