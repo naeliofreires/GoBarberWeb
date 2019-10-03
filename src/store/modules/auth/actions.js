@@ -1,3 +1,4 @@
+// Sign In
 export function signInRequest(email, password) {
   return {
     type: '@auth/SIGN_IN_REQUEST',
@@ -15,5 +16,14 @@ export function signInSuccess(token, user) {
 export function signFailure() {
   return {
     type: '@auth/SIGN_FAILURE',
+  };
+}
+
+// Sign Up
+export function signUpRequest(name, email, password) {
+  console.tron.log(' signUpRequest', name, email, password);
+  return {
+    type: '@auth/SIGN_UP_REQUEST',
+    payload: { name, email, password },
   };
 }
