@@ -27,3 +27,10 @@ export function signUpRequest(name, email, password) {
     payload: { name, email, password },
   };
 }
+
+//
+export function signOut() {
+  return {
+    type: '@auth/SIGN_OUT',
+  };
+}
